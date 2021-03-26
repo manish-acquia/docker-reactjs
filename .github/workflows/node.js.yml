@@ -27,7 +27,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: false
-          tags: devops/nodeReact:latest
+          tags: devops/nodereact:latest
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
